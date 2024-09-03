@@ -1,11 +1,16 @@
-"use client"
+import HomePageContainer from './_containers/HomePageContainer'
+import BubbleMap from './_components/bubble-map'
 
-import  Rewards from '@/components/layout/rewards';
+import { projects } from './projects'
 
 export default function Home() {
+  const chains = ['ETH', 'BNB', 'SOL']
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <Rewards />
-    </main>
-  );
+    <HomePageContainer>
+      <main className="flex h-full w-full flex-col items-center justify-between">
+        <BubbleMap projects={projects} chains={chains} />
+      </main>
+    </HomePageContainer>
+  )
 }
