@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap'); */
 
 :root {
     --primary-color: #ff69b4;
@@ -6,6 +6,13 @@
     --background-color: #0a0a2a;
     --text-color: #ffffff;
     --accent-color: #ff1493;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('/fonts/Orbitron/Orbitron-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body,
@@ -17,16 +24,6 @@ html {
     color: var(--text-color);
     background-color: var(--background-color);
     line-height: 1.6;
-}
-
-.container {
-    /* background-image: linear-gradient(45deg, var(--primary-color) 25%, transparent 25%),
-        linear-gradient(-45deg, var(--primary-color) 25%, transparent 25%),
-        linear-gradient(45deg, transparent 75%, var(--primary-color) 75%),
-        linear-gradient(-45deg, transparent 75%, var(--primary-color) 75%);
-    background-size: 20px 20px;
-    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
-    animation: backgroundMove 10s linear infinite; */
 }
 
 @keyframes backgroundMove {
@@ -41,6 +38,7 @@ html {
 
 .content {
     position: relative;
+    font-family: 'Orbitron', sans-serif;
     z-index: 10;
     background-color: rgba(10, 10, 42, 0.8);
     color: white;
@@ -109,6 +107,7 @@ h2::after {
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
+    font-family: auto !important;
     overflow: hidden;
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
     animation: morphShape 5s infinite alternate;

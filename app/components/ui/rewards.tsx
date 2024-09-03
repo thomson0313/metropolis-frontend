@@ -41,12 +41,11 @@ const Rewards = () => {
     <div className='flex'>
       <div className='content'>
         <h1>MEMETROPOLIS Element Rewards</h1>
-
         <div className='elementGrid'>
           {elements.map((element) => (
             <button
               key={element}
-              className={`elementButton ${[element]}`}
+              className={`elementButton ${[element]} font-auto`}
               onClick={() => incrementCounter(element)}
             >
               {element.charAt(0).toUpperCase() + element.slice(1)}
