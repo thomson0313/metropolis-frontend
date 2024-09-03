@@ -169,7 +169,7 @@ const BubbleMap: React.FC<BubbleMapProps> = ({ projects, chains }) => {
   return (
     <div
       id="bubble-container"
-      className="relative h-full w-full"
+      className="relative h-full w-full flex"
       ref={bubbleContainerRef}
     />
   )
