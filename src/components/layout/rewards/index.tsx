@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import '../css/rewards.css'
 
 const elements = ['earth', 'air', 'fire', 'water', 'ether'];
 
@@ -39,7 +38,7 @@ const Rewards = () => {
 
   return (
     <div className='flex'>
-      <div className='content'>
+      <div className='content-reward'>
         <h1>MEMETROPOLIS Element Rewards</h1>
         <div className='elementGrid'>
           {elements.map((element) => (
